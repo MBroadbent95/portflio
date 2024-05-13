@@ -28,7 +28,7 @@
         </ul>
       </nav>
     </header>
-    <section class="my-8 pt-16">
+    <section class="my-96 pt-16">
       <div class="container mx-auto text-center">
         <article class="flex flex-col md:flex-row justify-center items-center">
           <div class="md:mr-8 mb-4 md:mb-0 text-center">
@@ -58,7 +58,7 @@
         </article>
       </div>
     </section>
-    <section class="my-8">
+    <section class="my-96">
       <div class="container mx-auto text-center">
         <h2 class="text-2xl font-semibold m-28">Skills & Tech</h2>
         <div class="grid grid-cols-4 gap-4 m-28">
@@ -82,81 +82,16 @@
         </div>
       </div>
     </section>
-    <!-- <section>
-      <div><h2>My Work</h2></div>
-      <div class="carousel relative overflow-hidden">
-        <div
-          class="carousel-inner flex transition-transform ease-in-out duration-300"
-        >
-          <a
-            href="https://github.com/MBroadbent95/project4-frontend"
-            target="_blank"
-            class="carousel-item"
-          >
-            <img
-              src="./src/assets/tTrovePortImage.png"
-              alt="Tasteful Trove Image"
-              class="w-1/2 h-auto"
-            />
-          </a>
-          <a
-            href="https://github.com/MBroadbent95/project-3-frontend"
-            target="_blank"
-            class="carousel-item"
-          >
-            <img
-              src="./src/assets/bBuddyPortImage.png"
-              alt="Bootcamp Buddy Image"
-              class="w-1/2 h-auto"
-            />
-          </a>
-          <a
-            href="https://main--chic-hamster-878f6b.netlify.app/"
-            target="_blank"
-            class="carousel-item"
-          >
-            <img
-              src="./src/assets/amiiboPortImage.png"
-              alt="Amiibo Api Image"
-              class="w-1/2 h-auto"
-            />
-          </a>
-          <a
-            href="https://mbroadbent95.github.io/SEB-Project-1/"
-            target="_blank"
-            class="carousel-item"
-          >
-            <img
-              src="./src/assets/ragingTaurosPortImage.png"
-              alt="Raging Tauros Image"
-              class="w-1/2 h-auto"
-            />
-          </a>
-        </div>
-        <button
-          class="prev-button absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-l focus:outline-none"
-        >
-          Prev
-        </button>
-        <button
-          class="next-button absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-r focus:outline-none"
-        >
-          Next
-        </button>
-      </div>
-      <div>GitHub Repo Link</div>
-      <div>Carousel Project link</div>
-    </section> -->
     <section>
-      <div>
-        <h2>My Work</h2>
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-16">My Work</h2>
       </div>
       <div class="carousel relative overflow-hidden mx-auto max-w-screen-lg">
         <div
           class="carousel-inner transition-transform ease-in-out duration-10"
         >
-          <div class="carousel-item">
-            <h2>Tasteful Trove</h2>
+          <div class="carousel-item text-center">
+            <h2 class="text-2xl font-semibold my-6">Tasteful Trove</h2>
             <a
               href="https://github.com/MBroadbent95/project4-frontend"
               target="_blank"
@@ -167,15 +102,31 @@
                 class="w-full h-auto"
               />
             </a>
-            <p>
-              Solo project: Bring together a full stack app using a React
-              frontend and a Flask backend. I created a recipe sharing platform
-              where users could browse and share recipes. This was deployed
-              using Heroku.
-            </p>
+            <div class="container">
+              <div class="inline-flex items-center">
+                <p class="font-medium my-6 w-1/2">
+                  Solo project: Bring together a full stack app using a React
+                  frontend and a Flask backend. I created a recipe sharing
+                  platform where users could browse and share recipes. This was
+                  deployed using Heroku.
+                </p>
+                <div class="mx-auto">
+                  <h3 class="font-medium">Project Repo</h3>
+                  <a
+                    href="https://github.com/MBroadbent95/project4-frontend"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                      class="w-2/12 mx-auto"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <h2>Bootcamp Buddy</h2>
+          <div class="carousel-item text-center">
+            <h2 class="text-2xl font-semibold my-6">Bootcamp Buddy</h2>
             <a
               href="https://github.com/MBroadbent95/project-3-frontend"
               target="_blank"
@@ -186,15 +137,15 @@
                 class="w-full h-auto"
               />
             </a>
-            <p>
+            <p class="font-medium my-6">
               Team project: An online platform where you can read relevant
               advice from students about anything and everything software
               engineering. For deployment, my team used a combination of Netlify
               for the front and back end, and then Mongo Atlas for the database.
             </p>
           </div>
-          <div class="carousel-item">
-            <h2>Amiibo Api</h2>
+          <div class="carousel-item text-center">
+            <h2 class="text-2xl font-semibold my-6">Amiibo Api</h2>
             <a
               href="https://main--chic-hamster-878f6b.netlify.app/"
               target="_blank"
@@ -205,15 +156,15 @@
                 class="w-full h-auto"
               />
             </a>
-            <p>
+            <p class="font-medium my-6">
               Pair Programming: Using an external API, we were able to work
               effectively and efficiently towards a tight deadline to deliver a
               responsive React App. The app would display information based on
               popular Nintendo Characters.
             </p>
           </div>
-          <div class="carousel-item">
-            <h2>Raging Tauros</h2>
+          <div class="carousel-item text-center">
+            <h2 class="text-2xl font-semibold my-6">Raging Tauros</h2>
             <a
               href="https://mbroadbent95.github.io/SEB-Project-1/"
               target="_blank"
@@ -224,7 +175,7 @@
                 class="w-full h-auto"
               />
             </a>
-            <p>
+            <p class="font-medium my-6">
               My first solo project: Over the course of 1 week I was able to
               create a stylised version of Space Invaders using my new knowledge
               of HTML, CSS & JavaScript.
@@ -242,7 +193,6 @@
           Next
         </button>
       </div>
-      <div>GitHub Repo Link</div>
     </section>
     <section>
       <div><h2>Contact Me</h2></div>
