@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.carousel {
+/* .carousel {
   width: 100%;
 }
 
@@ -16,4 +16,4 @@
 .carousel-item img {
   width: 25%;
   height: auto;
-}
+} */
