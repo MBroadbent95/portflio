@@ -24,56 +24,80 @@
         background-size:contain;
         background-position: center; */
         background-color: rgb(230, 230, 230);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
     </style>
   </head>
   <body>
     <header class="bg-gray-800 text-white fixed w-full top-0 z-50 shadow-xl">
       <nav class="container mx-auto flex items-center justify-between py-4">
-        <a href="#" class="text-lg font-semibold">My Portfolio</a>
-        <ul class="flex space-x-4">
+        <!-- <a href="#" class="text-lg font-semibold ml-4">My Portfolio</a> -->
+        <ul class="flex mx-auto">
           <!-- <li><a href="#" class="hover:text-gray-300">Home</a></li> -->
 
-          <li>
-            <a href="#tech" class="hover:text-gray-300">Skills & Tech</a>
+          <li class="mx-6">
+            <a
+              href="#tech"
+              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              >Skills & Tech</a
+            >
           </li>
-          <li>
-            <a href="#projects" class="hover:text-gray-300">My Projects</a>
+          <li class="mx-6">
+            <a
+              href="#projects"
+              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              >My Projects</a
+            >
           </li>
-          <li><a href="#about" class="hover:text-gray-300">About me</a></li>
-          <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+          <li class="mx-6">
+            <a
+              href="#about"
+              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              >About me</a
+            >
+          </li>
+          <li class="mx-6">
+            <a
+              href="#contact"
+              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="mt-96">
-      <div class="flex justify-center items-center flex-col">
-        <div
-          class="container border-solid border-4 border-black rounded-md py-8 px-4 text-center"
-        >
-          <div class="text-5xl font-bold">Michael Broadbent</div>
-          <div class="text-3xl">Junior Software Engineer</div>
-        </div>
-        <div class="mt-80">
-          <svg
-            class="animate-bounce h-8 w-8 text-black"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+    <section style="background-image: url(./src/assets/gradientBackground.jpg)">
+      <div class="mt-12 flex-col justify-center items-center pt-80">
+        <div class="flex justify-center items-center flex-col">
+          <div
+            class="container border-solid border-4 border-black rounded-md py-8 px-4 text-center"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="5"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+            <div class="text-5xl font-bold">Michael Broadbent</div>
+            <div class="text-3xl">Junior Software Engineer</div>
+          </div>
+          <div class="lg:mt-80 mt-56">
+            <svg
+              class="animate-bounce h-8 w-8 text-black"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="5"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </section>
-    <section id="tech" class="mt-16 pt-11">
+    <section id="tech" class="lg:mt-16 pt-11">
       <div class="container mx-auto text-center">
         <h2 class="text-2xl font-semibold m-28">Skills & Tech</h2>
-        <div class="grid grid-cols-4 gap-16 m-28">
+        <div class="grid grid-cols-4 gap-16 m-28 mx-auto">
           <i class="devicon-react-original-wordmark text-6xl"></i>
           <i class="devicon-javascript-plain text-6xl"></i>
           <i class="devicon-typescript-plain text-6xl"></i>
