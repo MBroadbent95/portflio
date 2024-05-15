@@ -18,9 +18,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script defer src="./scripts/app.js"></script>
+    <style>
+      body {
+        /* background-image: url("./src/assets/gradientBackground.jpg");
+        background-size:contain;
+        background-position: center; */
+        background-color: rgb(230, 230, 230);
+      }
+    </style>
   </head>
   <body>
-    <header class="bg-gray-800 text-white fixed w-full top-0 z-50">
+    <header class="bg-gray-800 text-white fixed w-full top-0 z-50 shadow-xl">
       <nav class="container mx-auto flex items-center justify-between py-4">
         <a href="#" class="text-lg font-semibold">My Portfolio</a>
         <ul class="flex space-x-4">
@@ -37,40 +45,35 @@
         </ul>
       </nav>
     </header>
-    <section class="my-96 pt-16">
-      <!-- <div class="container mx-auto text-center">
-        <article class="flex flex-col md:flex-row justify-center items-center">
-          <div class="md:mr-8 mb-4 md:mb-0 text-center">
-            <h2 class="text-2xl font-semibold mb-4">About me</h2>
-            <div class="container mx-auto max-w-md">
-              <p class="mb-4">
-                A driven and dedicated team player embarking on an exciting
-                journey in the tech industry. Fueled by a passion for software
-                and A.I..
-              </p>
-              <p>
-                I began my tech career through General Assembly's 3-month
-                software engineering immersive program. Now eager to expand my
-                skill set and transition into a developer, I am actively seeking
-                opportunities to leverage and enhance my abilities to their
-                fullest potential.
-              </p>
-            </div>
-          </div>
-          <div class="aspect-w-1 aspect-h-1 flex items-center justify-center">
-            <img
-              src="./src/assets/profileShot.png"
-              alt="Michael profile shot"
-              class="object-cover w-2/5 h-2/5 rounded-full shadow-lg"
+    <section class="mt-96">
+      <div class="flex justify-center items-center flex-col">
+        <div
+          class="container border-solid border-4 border-black rounded-md py-8 px-4 text-center"
+        >
+          <div class="text-5xl font-bold">Michael Broadbent</div>
+          <div class="text-3xl">Junior Software Engineer</div>
+        </div>
+        <div class="mt-80">
+          <svg
+            class="animate-bounce h-8 w-8 text-black"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="5"
+              d="M19 9l-7 7-7-7"
             />
-          </div>
-        </article>
-      </div> -->
+          </svg>
+        </div>
+      </div>
     </section>
-    <section id="tech" class="my-96 pt-11">
+    <section id="tech" class="mt-16 pt-11">
       <div class="container mx-auto text-center">
         <h2 class="text-2xl font-semibold m-28">Skills & Tech</h2>
-        <div class="grid grid-cols-4 gap-4 m-28">
+        <div class="grid grid-cols-4 gap-16 m-28">
           <i class="devicon-react-original-wordmark text-6xl"></i>
           <i class="devicon-javascript-plain text-6xl"></i>
           <i class="devicon-typescript-plain text-6xl"></i>
@@ -91,7 +94,7 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="pt-20">
+    <section id="projects" class="pt-20 mt-70">
       <div class="container mx-auto text-center">
         <h2 class="text-2xl font-semibold">My Work</h2>
       </div>
@@ -294,37 +297,7 @@
         </div>
       </div>
     </section>
-    <!-- <section>
-      <div class="container mx-auto text-center">
-        <h2 class="text-2xl font-semibold mb-16">Contact Me</h2>
-      </div>
-      <div class="container mx-auto text-center inline-flex">
-        <span
-          ><a href=""
-            ><i
-              alt="Email"
-              class="fa fa-envelope w-1/3"
-              style="font-size: 48px"
-              aria-hidden="true"
-            ></i></a
-        ></span>
-        <span
-          ><a href=""
-            ><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain-wordmark.svg"
-              alt="LinkedIn"
-              class="w-1/3 mx-auto" /></a
-        ></span>
-        <span
-          ><a href=""
-            ><img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-              alt="GitHub"
-              class="w-1/3 mx-auto" /></a
-        ></span>
-      </div>
-    </section> -->
-    <section id="about" class="my-96 pt-11">
+    <section id="about" class="mb-48 pb-11 pt-8">
       <div class="container mx-auto text-center">
         <article
           class="flex flex-col md:flex-row justify-center items-center my-40"
@@ -394,6 +367,12 @@
           owners. All company, product and service names used in this website
           are for identification purposes only.
         </p>
+        <div>
+          <a
+            href="https://www.freepik.com/free-vector/gradient-background-wave-design-minimalist-style_36611146.htm#fromView=image_search_similar&page=5&position=48&uuid=b0225385-a32c-47ae-9c99-fc19615b822e"
+            >Image by AndreaCharlesta on Freepik</a
+          >
+        </div>
       </footer>
     </section>
   </body>
