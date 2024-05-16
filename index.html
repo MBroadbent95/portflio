@@ -36,59 +36,63 @@
     <header class="bg-gray-800 text-white fixed w-full top-0 z-50 shadow-xl">
       <nav class="container mx-auto flex items-center justify-between py-4">
         <!-- Burger Icon -->
-        <button
-          id="burger-menu"
-          class="block px-2 py-1 text-gray-300 focus:outline-none md:hidden"
-        >
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        <div class="flex-col justify-center">
+          <button
+            id="burger-menu"
+            class="block px-2 py-1 text-gray-300 focus:outline-none md:hidden"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
 
-        <!-- Navigation Links -->
-        <ul
-          id="nav-links"
-          class="hidden md:flex mx-auto md:items-center md:justify-between md:flex-grow md:w-auto"
-        >
-          <li class="px-6">
-            <a
-              href="#tech"
-              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
-              >Skills & Tech</a
+          <!-- Navigation Links -->
+          <div class="px-32 lg:px-0">
+            <ul
+              id="nav-links"
+              class="hidden md:flex mx-auto md:items-center md:justify-center md:flex-grow md:w-auto"
             >
-          </li>
-          <li class="mx-6">
-            <a
-              href="#projects"
-              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
-              >My Projects</a
-            >
-          </li>
-          <li class="mx-6">
-            <a
-              href="#about"
-              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
-              >About me</a
-            >
-          </li>
-          <li class="mx-6">
-            <a
-              href="#contact"
-              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
-              >Contact</a
-            >
-          </li>
-        </ul>
+              <li class="px-6 my-6 lg:my-0">
+                <a
+                  href="#tech"
+                  class="hover:text-gray-300 text-xl lg:text-lg hover:border-gray-300 border-transparent border-b-2"
+                  >Skills & Tech</a
+                >
+              </li>
+              <li class="m-6">
+                <a
+                  href="#projects"
+                  class="hover:text-gray-300 text-xl lg:text-lg hover:border-gray-300 border-transparent border-b-2"
+                  >My Projects</a
+                >
+              </li>
+              <li class="m-6">
+                <a
+                  href="#about"
+                  class="hover:text-gray-300 text-xl lg:text-lg hover:border-gray-300 border-transparent border-b-2"
+                  >About me</a
+                >
+              </li>
+              <li class="m-6">
+                <a
+                  href="#contact"
+                  class="hover:text-gray-300 text-xl lg:text-lg hover:border-gray-300 border-transparent border-b-2"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <section
@@ -125,7 +129,11 @@
     </section>
     <section id="tech" class="lg:mt-16 pt-11">
       <div class="container mx-auto text-center">
-        <h2 class="text-2xl font-semibold m-28">Skills & Tech</h2>
+        <h2
+          class="text-2xl font-semibold m-28 border-solid border-b-4 border-black rounded w-44 mx-auto"
+        >
+          Skills & Tech
+        </h2>
         <div class="grid grid-cols-4 gap-16 m-28 mx-auto">
           <i class="devicon-react-original-wordmark text-6xl"></i>
           <i class="devicon-javascript-plain text-6xl"></i>
@@ -157,9 +165,9 @@
     >
       <div class="container mx-auto text-center">
         <h2
-          class="text-2xl font-semibold border-solid border-4 border-black rounded-md w-44 h-24 mx-auto pt-7"
+          class="text-2xl font-semibold border-solid border-4 border-black rounded-md w-44 h-24 mx-auto pt-7 mt-6"
         >
-          My Work
+          My Projects
         </h2>
       </div>
       <div class="relative overflow-hidden mx-auto max-w-screen-lg">
@@ -220,7 +228,7 @@
           </div>
           <div class="carousel-item text-center">
             <h2
-              class="text-2xl font-semibold my-6 border-solid border-b-4 border-black rounded w-44 h-12 mx-auto pt-3"
+              class="text-2xl font-semibold my-6 border-solid border-b-4 border-black rounded w-56 h-12 mx-auto pt-3"
             >
               Bootcamp Buddy
             </h2>
@@ -381,14 +389,14 @@
         </div>
         <div>
           <button
-            class="prev-button absolute top-80 lg:top-1/2 left-0 transform -translate-y-1/2 border-solid border-4 border-black rounded-md text-black font-bold px-4 py-2 focus:outline-none hover:bg-yellow-300"
+            class="prev-button absolute top-56 lg:top-1/2 left-0 transform -translate-y-1/2 border-solid border-4 border-black rounded-md text-black font-bold px-4 py-2 focus:outline-none hover:bg-yellow-300"
           >
-            Prev
+            &lt;
           </button>
           <button
-            class="next-button absolute top-80 lg:top-1/2 right-0 transform -translate-y-1/2 border-solid border-4 border-black rounded-md text-black font-bold px-4 py-2 focus:outline-none hover:bg-yellow-300"
+            class="next-button absolute top-56 lg:top-1/2 right-0 transform -translate-y-1/2 border-solid border-4 border-black rounded-md text-black font-bold px-4 py-2 focus:outline-none hover:bg-yellow-300"
           >
-            Next
+            &gt;
           </button>
         </div>
       </div>
@@ -399,7 +407,11 @@
           class="flex flex-col md:flex-row justify-center items-center lg:my-40 mt-40"
         >
           <div class="md:mr-8 mb-4 md:mb-0 text-center">
-            <h2 class="text-2xl font-semibold mb-4 pb-8">About me</h2>
+            <h2
+              class="text-2xl font-semibold mb-4 pb-4 border-solid border-b-4 border-black rounded w-44 mx-auto"
+            >
+              About me
+            </h2>
             <div class="container mx-auto max-w-md">
               <p class="mb-4">
                 A driven and dedicated team player embarking on an exciting
