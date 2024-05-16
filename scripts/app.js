@@ -32,3 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showCurrentItem();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burger-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  burgerMenu.addEventListener("click", function () {
+    this.classList.toggle("active");
+    navLinks.classList.toggle("hidden");
+  });
+});

@@ -19,6 +19,9 @@
     />
     <script defer src="./scripts/app.js"></script>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         /* background-image: url("./src/assets/gradientBackground.jpg");
         background-size:contain;
@@ -32,35 +35,56 @@
   <body>
     <header class="bg-gray-800 text-white fixed w-full top-0 z-50 shadow-xl">
       <nav class="container mx-auto flex items-center justify-between py-4">
-        <!-- <a href="#" class="text-lg font-semibold ml-4">My Portfolio</a> -->
-        <ul class="flex mx-auto">
-          <!-- <li><a href="#" class="hover:text-gray-300">Home</a></li> -->
+        <!-- Burger Icon -->
+        <button
+          id="burger-menu"
+          class="block px-2 py-1 text-gray-300 focus:outline-none md:hidden"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
 
-          <li class="mx-6">
+        <!-- Navigation Links -->
+        <ul
+          id="nav-links"
+          class="hidden md:flex mx-auto md:items-center md:justify-between md:flex-grow md:w-auto"
+        >
+          <li class="px-6">
             <a
               href="#tech"
-              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
               >Skills & Tech</a
             >
           </li>
           <li class="mx-6">
             <a
               href="#projects"
-              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
               >My Projects</a
             >
           </li>
           <li class="mx-6">
             <a
               href="#about"
-              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
               >About me</a
             >
           </li>
           <li class="mx-6">
             <a
               href="#contact"
-              class="hover:text-gray-300 hover:border-gray-300 border-transparent border-b-2"
+              class="hover:text-gray-300 text-lg hover:border-gray-300 border-transparent border-b-2"
               >Contact</a
             >
           </li>
@@ -132,17 +156,25 @@
       "
     >
       <div class="container mx-auto text-center">
-        <h2 class="text-2xl font-semibold">My Work</h2>
+        <h2
+          class="text-2xl font-semibold border-solid border-4 border-black rounded-md w-44 h-24 mx-auto pt-7"
+        >
+          My Work
+        </h2>
       </div>
       <div class="relative overflow-hidden mx-auto max-w-screen-lg">
         <div class="carousel-inner">
           <div class="carousel-item text-center">
-            <h2 class="text-2xl font-semibold my-6">Tasteful Trove</h2>
+            <h2
+              class="text-2xl font-semibold my-6 border-solid border-b-4 border-black rounded w-44 h-12 mx-auto pt-3"
+            >
+              Tasteful Trove
+            </h2>
 
             <img
               src="./src/assets/tTrovePortImage.png"
               alt="Tasteful Trove Image"
-              class="w-auto h-auto object-cover"
+              class="w-auto h-auto object-cover rounded-md"
             />
 
             <div class="container">
@@ -156,7 +188,7 @@
                   deployed using Heroku.
                 </p>
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Project Repo</h3>
                   <a
@@ -170,7 +202,7 @@
                   </a>
                 </div>
                 <div
-                  class="mx-auto lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="mx-auto lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Live Link</h3>
                   <a
@@ -187,12 +219,16 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <h2 class="text-2xl font-semibold my-6">Bootcamp Buddy</h2>
+            <h2
+              class="text-2xl font-semibold my-6 border-solid border-b-4 border-black rounded w-44 h-12 mx-auto pt-3"
+            >
+              Bootcamp Buddy
+            </h2>
 
             <img
               src="./src/assets/bBuddyPortImage.png"
               alt="Bootcamp Buddy Image"
-              class="w-auto h-auto object-cover"
+              class="w-auto h-auto object-cover rounded-md"
             />
 
             <div class="container">
@@ -207,7 +243,7 @@
                   the database.
                 </p>
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Project Repo</h3>
                   <a
@@ -221,7 +257,7 @@
                   </a>
                 </div>
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Live Link</h3>
                   <a href="https://bootcamp-buddy.netlify.app/" target="_blank">
@@ -235,12 +271,16 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <h2 class="text-2xl font-semibold my-6">Amiibo Api</h2>
+            <h2
+              class="text-2xl font-semibold my-6 border-solid border-b-4 border-black rounded w-44 h-12 mx-auto pt-3"
+            >
+              Amiibo Api
+            </h2>
 
             <img
               src="./src/assets/amiiboPortImage.png"
               alt="Amiibo Api Image"
-              class="w-auto h-auto object-cover"
+              class="w-auto h-auto object-cover rounded-md"
             />
 
             <div class="container">
@@ -254,7 +294,7 @@
                   information based on popular Nintendo Characters.
                 </p>
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Project Repo</h3>
                   <a
@@ -268,7 +308,7 @@
                   </a>
                 </div>
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Live Link</h3>
                   <a
@@ -285,12 +325,16 @@
             </div>
           </div>
           <div class="carousel-item text-center">
-            <h2 class="text-2xl font-semibold my-6">Raging Tauros</h2>
+            <h2
+              class="text-2xl font-semibold my-6 border-solid border-b-4 border-black rounded w-44 h-12 mx-auto pt-3"
+            >
+              Raging Tauros
+            </h2>
 
             <img
               src="./src/assets/ragingTaurosPortImage.png"
               alt="Raging Tauros Image"
-              class="w-auto h-auto object-cover"
+              class="w-auto h-auto object-cover rounded-md"
             />
 
             <div class="container">
@@ -304,7 +348,7 @@
                 </p>
 
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Project Repo</h3>
                   <a
@@ -318,7 +362,7 @@
                   </a>
                 </div>
                 <div
-                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-white transition duration-300"
+                  class="lg:mx-auto m-8 border-solid border-4 border-black rounded-md w-44 h-24 hover:bg-yellow-300 transition duration-300"
                 >
                   <h3 class="font-bold mt-1">Live Link</h3>
                   <a
@@ -337,22 +381,22 @@
         </div>
         <div>
           <button
-            class="prev-button absolute top-72 lg:top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded focus:outline-none"
+            class="prev-button absolute top-80 lg:top-1/2 left-0 transform -translate-y-1/2 border-solid border-4 border-black rounded-md text-black font-bold px-4 py-2 focus:outline-none hover:bg-yellow-300"
           >
             Prev
           </button>
           <button
-            class="next-button absolute top-72 lg:top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded focus:outline-none"
+            class="next-button absolute top-80 lg:top-1/2 right-0 transform -translate-y-1/2 border-solid border-4 border-black rounded-md text-black font-bold px-4 py-2 focus:outline-none hover:bg-yellow-300"
           >
             Next
           </button>
         </div>
       </div>
     </section>
-    <section id="about" class="mb-48 pb-11 lg:pt-8 pt-2">
+    <section id="about" class="lg:mb-48 mb-24 lg:pb-11 lg:pt-8 pt-2">
       <div class="container mx-auto text-center">
         <article
-          class="flex flex-col md:flex-row justify-center items-center my-40"
+          class="flex flex-col md:flex-row justify-center items-center lg:my-40 mt-40"
         >
           <div class="md:mr-8 mb-4 md:mb-0 text-center">
             <h2 class="text-2xl font-semibold mb-4 pb-8">About me</h2>
@@ -380,7 +424,7 @@
           </div>
         </article>
       </div>
-      <div id="contact" class="container mx-auto text-center">
+      <div id="contact" class="container mx-auto text-center lg:pt-0 pt-40">
         <h2 class="text-2xl font-semibold mb-16">Contact</h2>
       </div>
       <div class="container mx-auto text-center flex justify-center">
